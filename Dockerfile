@@ -1,4 +1,4 @@
-FROM node:14-alpine3.12
+FROM node:16-alpine3.12
 ADD . /opt/home-app
 WORKDIR /opt/home-app
 

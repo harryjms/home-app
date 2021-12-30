@@ -3,7 +3,15 @@ import cheerio from "cheerio";
 
 const getIcon = async (url: string) => {
   try {
-    const html = await fetch(url, { follow: 20 }).then((res) => res.text());
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 2000);
+    const html = await fetch(url, {
+      follow: 20,
+      signal: controller.signal,
+    }).then((res) => {
+      clearTimeout(timeout);
+      return res.text();
+    });
     const $ = cheerio.load(html);
     const iconEl = $(
       "link[rel='apple-touch-icon'], link[rel='apple-touch-icon-precomposed']"
