@@ -4,7 +4,7 @@ This simple web app is designed to display a list of links for easy access to th
 
 ## Configuration
 
-It will read a `site.json` file in the root directory. Below is an example of such file.
+It will read a `sites.json` file in the root directory. Below is an example of such file.
 
 ```
 [
@@ -26,6 +26,6 @@ The `icon` and `description` keys are optional. If you do not provide an icon UR
 
 
 ## Example
-Below is a screenshot of what the above `site.json` file will produce.
+Below is a screenshot of what the above `sites.json` file will produce.
 
 ![Screenshot 2022-01-05 at 13 09 46](https://user-images.githubusercontent.com/10834327/148222830-821f533f-2f59-418a-b712-6e7c83dcb401.png)
