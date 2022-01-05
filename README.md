@@ -2,7 +2,8 @@
 
 This simple web app is designed to display a list of links for easy access to things.
 
-## Configuration
+## Configuration
+
 It will read a `site.json` file in the root directory. Below is an example of such file.
 
 ```
