@@ -23,3 +23,9 @@ It will read a `site.json` file in the root directory. Below is an example of su
 ```
 
 The `icon` and `description` keys are optional. If you do not provide an icon URL, it will attempt to read the `apple-icon` from the meta data of the URL used to access the service.
+
+
+## Example
+Below is a screenshot of what the above `site.json` file will produce.
+
+![Screenshot 2022-01-05 at 13 09 46](https://user-images.githubusercontent.com/10834327/148222830-821f533f-2f59-418a-b712-6e7c83dcb401.png)
